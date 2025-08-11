@@ -29,7 +29,7 @@ class User extends Authenticatable
     ];
 
     public function pacientes(){
-        return $this->hasMany(Paciente::class, 'nutriologo_id');
+        return $this->hasMany(Paciente::class);
     }
 
     public function citas()
